@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------
-// Copyright(c) 2021 Razer Inc..
+// Copyright(c) 2021 Razer Inc.
 //------------------------------------------------------------------------
 
 #include "mypluginprocessor.h"
@@ -10,7 +10,7 @@
 
 using namespace Steinberg;
 
-namespace RazerInc {
+namespace ChromaSDK {
 //------------------------------------------------------------------------
 // VST3_ChromaSDKPluginProcessor
 //------------------------------------------------------------------------
@@ -130,4 +130,4 @@ tresult PLUGIN_API VST3_ChromaSDKPluginProcessor::getState (IBStream* state)
 }
 
 //------------------------------------------------------------------------
-} // namespace RazerInc
+} // namespace ChromaSDK

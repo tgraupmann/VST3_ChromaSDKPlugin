@@ -36,8 +36,8 @@ if(SMTG_ADD_VSTGUI)
 endif()
 # -------------------
 
-smtg_add_vst3_snapshot(VST3_ChromaSDKPlugin resource/AA68CE00C5C856A8B8744C58188677FA_snapshot.png)
-smtg_add_vst3_snapshot(VST3_ChromaSDKPlugin resource/AA68CE00C5C856A8B8744C58188677FA_snapshot_2.0x.png)
+smtg_add_vst3_snapshot(VST3_ChromaSDKPlugin resource/EC55FC9C8A4F583082EE14E6C1173354_snapshot.png)
+smtg_add_vst3_snapshot(VST3_ChromaSDKPlugin resource/EC55FC9C8A4F583082EE14E6C1173354_snapshot_2.0x.png)
 
 target_link_libraries(VST3_ChromaSDKPlugin
     PRIVATE

@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------
-// Copyright(c) 2021 Razer Inc..
+// Copyright(c) 2021 Razer Inc.
 //------------------------------------------------------------------------
 
 #include "myplugincontroller.h"
@@ -8,7 +8,7 @@
 
 using namespace Steinberg;
 
-namespace RazerInc {
+namespace ChromaSDK {
 
 //------------------------------------------------------------------------
 // VST3_ChromaSDKPluginController Implementation
@@ -103,4 +103,4 @@ tresult PLUGIN_API VST3_ChromaSDKPluginController::getParamValueByString (Vst::P
 }
 
 //------------------------------------------------------------------------
-} // namespace RazerInc
+} // namespace ChromaSDK

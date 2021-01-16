@@ -4,7 +4,7 @@
 <plist version="1.0">
 <dict>
   <key>NSHumanReadableCopyright</key>
-  <string>Copyright(c) 2021 My Plug-in Company.</string>
+  <string>Copyright(c) 2021 Razer Inc.</string>
   <key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>

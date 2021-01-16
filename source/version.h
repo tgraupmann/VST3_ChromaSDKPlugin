@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------
-// Copyright(c) 2021 Razer Inc..
+// Copyright(c) 2021 Razer Inc.
 //------------------------------------------------------------------------
 
 #pragma once
@@ -31,6 +31,6 @@
 #else
 #define stringFileDescription	"VST3_ChromaSDKPlugin VST3"
 #endif
-#define stringCompanyName		"Razer Inc.\0"
-#define stringLegalCopyright	"Copyright(c) 2021 Razer Inc.."
+#define stringCompanyName		"Razer Inc\0"
+#define stringLegalCopyright	"Copyright(c) 2021 Razer Inc."
 #define stringLegalTrademarks	"VST is a trademark of Steinberg Media Technologies GmbH"

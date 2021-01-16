@@ -159,7 +159,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/AA68CE00C5C856A8B8744C58188677FA_snapshot.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/EC55FC9C8A4F583082EE14E6C1173354_snapshot.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -168,7 +168,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/AA68CE00C5C856A8B8744C58188677FA_snapshot_2.0x.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/EC55FC9C8A4F583082EE14E6C1173354_snapshot_2.0x.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -296,7 +296,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/AA68CE00C5C856A8B8744C58188677FA_snapshot.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/EC55FC9C8A4F583082EE14E6C1173354_snapshot.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -305,7 +305,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/AA68CE00C5C856A8B8744C58188677FA_snapshot_2.0x.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/EC55FC9C8A4F583082EE14E6C1173354_snapshot_2.0x.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

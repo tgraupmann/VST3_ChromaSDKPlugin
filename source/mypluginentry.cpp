@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------
-// Copyright(c) 2021 Razer Inc..
+// Copyright(c) 2021 Razer Inc.
 //------------------------------------------------------------------------
 
 #define DEBUG_LOGGING true
@@ -181,7 +181,7 @@ bool DeinitModule ()
 }
 
 using namespace Steinberg::Vst;
-using namespace RazerInc;
+using namespace ChromaSDK;
 
 //------------------------------------------------------------------------
 //  VST Plug-in Entry
@@ -190,9 +190,9 @@ using namespace RazerInc;
 // GetPluginFactory function!
 //------------------------------------------------------------------------
 
-BEGIN_FACTORY_DEF ("Razer Inc.", 
-			       "https://www.RazerInc.com", 
-			       "mailto:info@RazerInc.com")
+BEGIN_FACTORY_DEF ("Razer Inc", 
+			       "https://github.com/tgraupmann/CST3_ChromaSDKPlugin", 
+			       "mailto:tgraupmann@gmail.com")
 
 	//---First Plug-in included in this factory-------
 	// its kVstAudioEffectClass component

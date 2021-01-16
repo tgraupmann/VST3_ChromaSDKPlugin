@@ -1,12 +1,12 @@
 //------------------------------------------------------------------------
-// Copyright(c) 2021 Razer Inc..
+// Copyright(c) 2021 Razer Inc.
 //------------------------------------------------------------------------
 
 #pragma once
 
 #include "public.sdk/source/vst/vstaudioeffect.h"
 
-namespace RazerInc {
+namespace ChromaSDK {
 
 //------------------------------------------------------------------------
 //  VST3_ChromaSDKPluginProcessor
@@ -54,4 +54,4 @@ protected:
 };
 
 //------------------------------------------------------------------------
-} // namespace RazerInc
+} // namespace ChromaSDK

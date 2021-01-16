@@ -68,10 +68,10 @@
       <UniqueIdentifier>{5FCBFE06-B807-3AE6-A999-4BB7932D27B2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Razer">
-      <UniqueIdentifier>{0af84489-b7a3-4f8b-887f-e73d56e03a32}</UniqueIdentifier>
+      <UniqueIdentifier>{a57c0233-97d3-4b96-bcd1-4e95a186e5a3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Razer">
-      <UniqueIdentifier>{d6a427ce-7556-410a-b0a0-34093d96e56d}</UniqueIdentifier>
+      <UniqueIdentifier>{569fbee9-4b38-49b0-82b0-3a493d5de6be}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
