@@ -4,7 +4,7 @@
 
 #include "myplugincontroller.h"
 #include "myplugincids.h"
-#include "vstgui/plugin-bindings/vst3editor.h"
+
 
 using namespace Steinberg;
 
@@ -72,8 +72,7 @@ IPlugView* PLUGIN_API VST3_ChromaSDKPluginController::createView (FIDString name
 	if (FIDStringsEqual (name, Vst::ViewType::kEditor))
 	{
 		// create your editor here and return a IPlugView ptr of it
-		auto* view = new VSTGUI::VST3Editor (this, "view", "myplugineditor.uidesc");
-		return view;
+        return nullptr;
 	}
 	return nullptr;
 }

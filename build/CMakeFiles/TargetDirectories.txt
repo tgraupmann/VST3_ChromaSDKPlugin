@@ -1,11 +1,8 @@
 C:/Public/VST3_ChromaSDKPlugin/build/CMakeFiles/VST3_ChromaSDKPlugin.dir
 C:/Public/VST3_ChromaSDKPlugin/build/CMakeFiles/ALL_BUILD.dir
 C:/Public/VST3_ChromaSDKPlugin/build/CMakeFiles/ZERO_CHECK.dir
-C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/CMakeFiles/vstgui_support.dir
 C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/CMakeFiles/cmake_modules.dir
 C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/CMakeFiles/ALL_BUILD.dir
-C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/VSTGUI.build/lib/CMakeFiles/vstgui.dir
-C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/VSTGUI.build/uidescription/CMakeFiles/vstgui_uidescription.dir
 C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/pluginterfaces/CMakeFiles/pluginterfaces.dir
 C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/pluginterfaces/CMakeFiles/ALL_BUILD.dir
 C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/base/CMakeFiles/base.dir

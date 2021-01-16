@@ -60,7 +60,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\vstgui4;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -76,15 +76,15 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;SMTG_RENAME_ASSERT=1;DEVELOPMENT=1;_UNICODE;VSTGUI_LIVE_EDITING;VSTGUI_ENABLE_DEPRECATED_METHODS=1;SMTG_MODULE_IS_BUNDLE=1;CMAKE_INTDIR="Debug";VST3_ChromaSDKPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SMTG_RENAME_ASSERT=1;DEVELOPMENT=1;_UNICODE;CMAKE_INTDIR="Debug";VST3_ChromaSDKPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;SMTG_RENAME_ASSERT=1;DEVELOPMENT=1;_UNICODE;VSTGUI_LIVE_EDITING;VSTGUI_ENABLE_DEPRECATED_METHODS=1;SMTG_MODULE_IS_BUNDLE=1;CMAKE_INTDIR=\"Debug\";VST3_ChromaSDKPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\vstgui4;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;SMTG_RENAME_ASSERT=1;DEVELOPMENT=1;_UNICODE;CMAKE_INTDIR=\"Debug\";VST3_ChromaSDKPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\vstgui4;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -95,15 +95,6 @@
       <Message>
       </Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -150,7 +141,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/myplugineditor.uidesc C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/E5E82FE621AF5C658AE3B9F1A1FB5212_snapshot.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -159,16 +150,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/EC55FC9C8A4F583082EE14E6C1173354_snapshot.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/EC55FC9C8A4F583082EE14E6C1173354_snapshot_2.0x.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/E5E82FE621AF5C658AE3B9F1A1FB5212_snapshot_2.0x.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -178,7 +160,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>lib\Debug\vstgui_support.lib;lib\Debug\sdk.lib;lib\Debug\vstgui_uidescription.lib;lib\Debug\vstgui.lib;lib\Debug\sdk_common.lib;lib\Debug\base.lib;lib\Debug\pluginterfaces.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\Debug\sdk.lib;lib\Debug\sdk_common.lib;lib\Debug\base.lib;lib\Debug\pluginterfaces.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -194,7 +176,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\vstgui4;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>6031;6308;6330;6385;6386;28125;28251;4221</DisableSpecificWarnings>
@@ -213,15 +195,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <StringPooling>true</StringPooling>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SMTG_RENAME_ASSERT=1;RELEASE=1;_UNICODE;VSTGUI_ENABLE_DEPRECATED_METHODS=1;SMTG_MODULE_IS_BUNDLE=1;CMAKE_INTDIR="Release";VST3_ChromaSDKPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SMTG_RENAME_ASSERT=1;RELEASE=1;_UNICODE;CMAKE_INTDIR="Release";VST3_ChromaSDKPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SMTG_RENAME_ASSERT=1;RELEASE=1;_UNICODE;VSTGUI_ENABLE_DEPRECATED_METHODS=1;SMTG_MODULE_IS_BUNDLE=1;CMAKE_INTDIR=\"Release\";VST3_ChromaSDKPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\vstgui4;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SMTG_RENAME_ASSERT=1;RELEASE=1;_UNICODE;CMAKE_INTDIR=\"Release\";VST3_ChromaSDKPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\vstgui4;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\..;C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\base\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -232,15 +214,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message>
       </Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -287,7 +260,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/myplugineditor.uidesc C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/E5E82FE621AF5C658AE3B9F1A1FB5212_snapshot.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -296,16 +269,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/EC55FC9C8A4F583082EE14E6C1173354_snapshot.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/EC55FC9C8A4F583082EE14E6C1173354_snapshot_2.0x.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Public/VST3_ChromaSDKPlugin/resource/E5E82FE621AF5C658AE3B9F1A1FB5212_snapshot_2.0x.png C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources/Snapshots
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -315,7 +279,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>lib\Release\vstgui_support.lib;lib\Release\sdk.lib;lib\Release\vstgui_uidescription.lib;lib\Release\vstgui.lib;lib\Release\sdk_common.lib;lib\Release\base.lib;lib\Release\pluginterfaces.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\Release\sdk.lib;lib\Release\sdk_common.lib;lib\Release\base.lib;lib\Release\pluginterfaces.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -374,8 +338,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Public\VST3_ChromaSDKPlugin\source\myplugincontroller.cpp" />
     <ClCompile Include="C:\Public\VST3_ChromaSDKPlugin\source\mypluginentry.cpp" />
     <ClCompile Include="C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\source\main\dllmain.cpp" />
-    <None Include="C:\Public\VST3_ChromaSDKPlugin\resource\myplugineditor.uidesc">
-    </None>
     <ResourceCompile Include="C:\Public\VST3_ChromaSDKPlugin\resource\win32resource.rc" />
   </ItemGroup>
   <ItemGroup>
@@ -404,18 +366,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Public\VST3_ChromaSDKPlugin\build\vst3sdk\public.sdk\samples\vst-hosting\validator\validator.vcxproj">
       <Project>{8B64B053-84D8-3F5A-A98B-1F03046E009B}</Project>
       <Name>validator</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\Public\VST3_ChromaSDKPlugin\build\vst3sdk\VSTGUI.build\lib\vstgui.vcxproj">
-      <Project>{9F288D85-42D9-3853-B516-04AE88248D23}</Project>
-      <Name>vstgui</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\Public\VST3_ChromaSDKPlugin\build\vst3sdk\vstgui_support.vcxproj">
-      <Project>{CDE23BA8-1EC7-352D-84A1-414990B1C76A}</Project>
-      <Name>vstgui_support</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\Public\VST3_ChromaSDKPlugin\build\vst3sdk\VSTGUI.build\uidescription\vstgui_uidescription.vcxproj">
-      <Project>{2E7262C8-B98B-31C5-97EA-D1089A4A575F}</Project>
-      <Name>vstgui_uidescription</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

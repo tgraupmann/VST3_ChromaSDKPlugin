@@ -133,18 +133,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{8B64B053-84D8-3F5A-A98B-1F03046E009B}</Project>
       <Name>validator</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Public\VST3_ChromaSDKPlugin\build\vst3sdk\VSTGUI.build\lib\vstgui.vcxproj">
-      <Project>{9F288D85-42D9-3853-B516-04AE88248D23}</Project>
-      <Name>vstgui</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\Public\VST3_ChromaSDKPlugin\build\vst3sdk\vstgui_support.vcxproj">
-      <Project>{CDE23BA8-1EC7-352D-84A1-414990B1C76A}</Project>
-      <Name>vstgui_support</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\Public\VST3_ChromaSDKPlugin\build\vst3sdk\VSTGUI.build\uidescription\vstgui_uidescription.vcxproj">
-      <Project>{2E7262C8-B98B-31C5-97EA-D1089A4A575F}</Project>
-      <Name>vstgui_uidescription</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

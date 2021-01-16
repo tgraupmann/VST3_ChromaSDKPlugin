@@ -34,7 +34,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/VSTGUI.build/cmake_install.cmake")
   include("C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/pluginterfaces/cmake_install.cmake")
   include("C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/base/cmake_install.cmake")
   include("C:/Public/VST3_ChromaSDKPlugin/build/vst3sdk/public.sdk/cmake_install.cmake")

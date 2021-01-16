@@ -9,8 +9,8 @@
 
 namespace ChromaSDK {
 //------------------------------------------------------------------------
-static const Steinberg::FUID kVST3_ChromaSDKPluginProcessorUID (0xEC55FC9C, 0x8A4F5830, 0x82EE14E6, 0xC1173354);
-static const Steinberg::FUID kVST3_ChromaSDKPluginControllerUID (0xB8A2D462, 0x70AB5FB4, 0xAC736E52, 0x416956A4);
+static const Steinberg::FUID kVST3_ChromaSDKPluginProcessorUID (0xE5E82FE6, 0x21AF5C65, 0x8AE3B9F1, 0xA1FB5212);
+static const Steinberg::FUID kVST3_ChromaSDKPluginControllerUID (0x167E2346, 0x6B915492, 0xBB7D91BD, 0x501F9FBC);
 
 #define VST3_ChromaSDKPluginVST3Category "Fx"
 

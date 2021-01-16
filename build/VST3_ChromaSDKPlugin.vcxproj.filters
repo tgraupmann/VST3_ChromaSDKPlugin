@@ -53,9 +53,6 @@
     <CustomBuild Include="C:\Public\VST3_ChromaSDKPlugin\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Public\VST3_ChromaSDKPlugin\resource\myplugineditor.uidesc" />
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="C:\Public\VST3_ChromaSDKPlugin\resource\win32resource.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>
@@ -68,10 +65,10 @@
       <UniqueIdentifier>{5FCBFE06-B807-3AE6-A999-4BB7932D27B2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Razer">
-      <UniqueIdentifier>{a57c0233-97d3-4b96-bcd1-4e95a186e5a3}</UniqueIdentifier>
+      <UniqueIdentifier>{82cfb7cb-2bdc-4c48-8229-b208ba974c8f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Razer">
-      <UniqueIdentifier>{569fbee9-4b38-49b0-82b0-3a493d5de6be}</UniqueIdentifier>
+      <UniqueIdentifier>{3b7c9d0a-df56-471d-8a7a-d948ef2ffab1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
