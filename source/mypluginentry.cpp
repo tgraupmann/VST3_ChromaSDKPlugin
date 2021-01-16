@@ -50,6 +50,8 @@ bool InitModule ()
 #if DEBUG_LOGGING
 	ofstream pluginLog;
 	pluginLog.open("C:\\Temp\\vst3_chromaplugin.txt", std::ofstream::out | std::ofstream::app);
+	pluginLog << "InitModule()" << endl;
+	pluginLog.flush();
 #endif
 
 	if (ChromaAnimationAPI::InitAPI() != 0)
@@ -154,6 +156,8 @@ bool DeinitModule ()
 #if DEBUG_LOGGING
 	ofstream pluginLog;
 	pluginLog.open("C:\\Temp\\vst3_chromaplugin.txt", std::ofstream::out | std::ofstream::app);
+	pluginLog << "DeinitModule()" << endl;
+	pluginLog.flush();
 #endif
 	ChromaAnimationAPI::StopAll();
 	ChromaAnimationAPI::CloseAll();
