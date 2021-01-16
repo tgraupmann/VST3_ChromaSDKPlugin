@@ -92,7 +92,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PreLinkEvent>
-      <Message>		</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Public/VST3_ChromaSDKPlugin/build/VST3/Debug/VST3_ChromaSDKPlugin.vst3/Contents/Resources
 if %errorlevel% neq 0 goto :cmEnd
@@ -122,7 +123,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreLinkEvent>
     <PostBuildEvent>
-      <Message>				</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 cd C:\Public\VST3_ChromaSDKPlugin\build\bin
 if %errorlevel% neq 0 goto :cmEnd
@@ -227,7 +229,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PreLinkEvent>
-      <Message>		</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Public/VST3_ChromaSDKPlugin/build/VST3/Release/VST3_ChromaSDKPlugin.vst3/Contents/Resources
 if %errorlevel% neq 0 goto :cmEnd
@@ -257,7 +260,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreLinkEvent>
     <PostBuildEvent>
-      <Message>				</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 cd C:\Public\VST3_ChromaSDKPlugin\build\bin
 if %errorlevel% neq 0 goto :cmEnd
@@ -355,9 +359,16 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\source\Razer\ChromaAnimationAPI.h" />
+    <ClInclude Include="..\source\Razer\ChromaSDKPluginTypes.h" />
+    <ClInclude Include="..\source\Razer\RzChromaSDKDefines.h" />
+    <ClInclude Include="..\source\Razer\RzChromaSDKTypes.h" />
+    <ClInclude Include="..\source\Razer\RzErrors.h" />
     <ClInclude Include="C:\Public\VST3_ChromaSDKPlugin\source\version.h" />
     <ClInclude Include="C:\Public\VST3_ChromaSDKPlugin\source\myplugincids.h" />
     <ClInclude Include="C:\Public\VST3_ChromaSDKPlugin\source\mypluginprocessor.h" />
+    <ClCompile Include="..\source\Razer\ChromaAnimationAPI.cpp" />
+    <ClCompile Include="..\source\Razer\ChromaSDKPluginTypes.cpp" />
     <ClCompile Include="C:\Public\VST3_ChromaSDKPlugin\source\mypluginprocessor.cpp" />
     <ClInclude Include="C:\Public\VST3_ChromaSDKPlugin\source\myplugincontroller.h" />
     <ClCompile Include="C:\Public\VST3_ChromaSDKPlugin\source\myplugincontroller.cpp" />

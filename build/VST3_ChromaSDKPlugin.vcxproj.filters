@@ -13,6 +13,12 @@
     <ClCompile Include="C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\source\main\dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\Razer\ChromaAnimationAPI.cpp">
+      <Filter>Source Files\Razer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Razer\ChromaSDKPluginTypes.cpp">
+      <Filter>Source Files\Razer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Public\VST3_ChromaSDKPlugin\source\version.h">
@@ -26,6 +32,21 @@
     </ClInclude>
     <ClInclude Include="C:\Public\VST3_ChromaSDKPlugin\source\myplugincontroller.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Razer\ChromaAnimationAPI.h">
+      <Filter>Header Files\Razer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Razer\ChromaSDKPluginTypes.h">
+      <Filter>Header Files\Razer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Razer\RzChromaSDKDefines.h">
+      <Filter>Header Files\Razer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Razer\RzChromaSDKTypes.h">
+      <Filter>Header Files\Razer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Razer\RzErrors.h">
+      <Filter>Header Files\Razer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -45,6 +66,12 @@
     </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{5FCBFE06-B807-3AE6-A999-4BB7932D27B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Razer">
+      <UniqueIdentifier>{0af84489-b7a3-4f8b-887f-e73d56e03a32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Razer">
+      <UniqueIdentifier>{d6a427ce-7556-410a-b0a0-34093d96e56d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
