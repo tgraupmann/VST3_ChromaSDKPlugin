@@ -2,7 +2,7 @@
 // Copyright(c) 2021 Razer Inc..
 //------------------------------------------------------------------------
 
-#define DEBUG_LOGGING false
+#define DEBUG_LOGGING true
 
 #include "mypluginprocessor.h"
 #include "myplugincontroller.h"
@@ -49,7 +49,7 @@ bool InitModule ()
 {
 #if DEBUG_LOGGING
 	ofstream pluginLog;
-	pluginLog.open("C:\\Temp\\vst3_chromaplugin.txt");
+	pluginLog.open("C:\\Temp\\vst3_chromaplugin.txt", std::ofstream::out | std::ofstream::app);
 #endif
 
 	if (ChromaAnimationAPI::InitAPI() != 0)
@@ -84,7 +84,7 @@ bool InitModule ()
 	if (result != RZRESULT_SUCCESS)
 	{
 #if DEBUG_LOGGING
-		pluginLog << "Failed to initialize Chroma!" << endl;
+		pluginLog << "Failed to initialize Chroma! Result=" << result << endl;
 		pluginLog.flush();
 		pluginLog.close();
 #endif
@@ -151,14 +151,28 @@ bool InitModule ()
 // called after library is unloaded
 bool DeinitModule ()
 {
+#if DEBUG_LOGGING
+	ofstream pluginLog;
+	pluginLog.open("C:\\Temp\\vst3_chromaplugin.txt", std::ofstream::out | std::ofstream::app);
+#endif
 	ChromaAnimationAPI::StopAll();
 	ChromaAnimationAPI::CloseAll();
 	RZRESULT result = ChromaAnimationAPI::Uninit();
 	if (result != RZRESULT_SUCCESS)
 	{
-		fprintf(stderr, "Failed to uninitialize Chroma!\r\n");
+#if DEBUG_LOGGING
+		pluginLog << "Failed to uninitialize Chroma! Result=" << result << endl;
+		pluginLog.flush();
+		pluginLog.close();
+#endif
 		return false;
 	}
+
+#if DEBUG_LOGGING
+	pluginLog << "Uninitialize Chroma!" << endl;
+	pluginLog.flush();
+	pluginLog.close();
+#endif
 	return true;
 }
 
