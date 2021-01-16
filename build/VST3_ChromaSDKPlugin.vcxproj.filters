@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Public\VST3_ChromaSDKPlugin\source\mypluginprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Public\VST3_ChromaSDKPlugin\source\myplugincontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Public\VST3_ChromaSDKPlugin\source\mypluginentry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\timot\Downloads\vst-sdk_3.7.1_build-50_2020-11-17\VST_SDK\VST3_SDK\public.sdk\source\main\dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Public\VST3_ChromaSDKPlugin\source\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Public\VST3_ChromaSDKPlugin\source\myplugincids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Public\VST3_ChromaSDKPlugin\source\mypluginprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Public\VST3_ChromaSDKPlugin\source\myplugincontroller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Public\VST3_ChromaSDKPlugin\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Public\VST3_ChromaSDKPlugin\resource\myplugineditor.uidesc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Public\VST3_ChromaSDKPlugin\resource\win32resource.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F5219C78-CCC2-355E-9CF9-C3F466A5C4BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5FCBFE06-B807-3AE6-A999-4BB7932D27B2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
