@@ -105,8 +105,8 @@ tresult PLUGIN_API VST3_ChromaSDKPluginProcessor::canProcessSampleSize (int32 sy
 		return kResultTrue;
 
 	// disable the following comment if your processing support kSample64
-	/* if (symbolicSampleSize == Vst::kSample64)
-		return kResultTrue; */
+	if (symbolicSampleSize == Vst::kSample64)
+		return kResultTrue;
 
 	return kResultFalse;
 }

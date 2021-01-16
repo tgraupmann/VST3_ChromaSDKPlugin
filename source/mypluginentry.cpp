@@ -38,6 +38,14 @@ const int GetColorArraySize2D(EChromaSDKDevice2DEnum device)
 	return maxRow * maxColumn;
 }
 
+void SetColor(int* colors, int size, int color)
+{
+	for (int i = 0; i < size; ++i)
+	{
+		colors[i] = color;
+	}
+}
+
 
 //------------------------------------------------------------------------
 //  Module init/exit
@@ -93,12 +101,12 @@ bool InitModule ()
 		return false;
 	}
 
+	Sleep(1000); //Wait for ChromaSDK
+
 #if DEBUG_LOGGING
 	pluginLog << "Chroma Initialized!" << endl;
 	pluginLog.flush();
 #endif
-
-	Sleep(100); //Wait for ChromaSDK
 
 
 	// Set default color
@@ -119,12 +127,12 @@ bool InitModule ()
 
 	int color = ChromaAnimationAPI::GetRGB(0, 255, 0);
 
-	memset(colorsChromaLink, color, sizeof(int) * sizeChromaLink);
-	memset(colorsHeadset, color, sizeof(int) * sizeHeadset);
-	memset(colorsKeyboard, color, sizeof(int) * sizeKeyboard);
-	memset(colorsKeypad, color, sizeof(int) * sizeKeypad);
-	memset(colorsMouse, color, sizeof(int) * sizeMouse);
-	memset(colorsMousepad, color, sizeof(int) * sizeMousepad);
+	SetColor(colorsChromaLink, sizeChromaLink, color);
+	SetColor(colorsHeadset, sizeHeadset, color);
+	SetColor(colorsKeyboard, sizeKeyboard, color);
+	SetColor(colorsKeypad, sizeKeypad, color);
+	SetColor(colorsMouse, sizeMouse, color);
+	SetColor(colorsMousepad, sizeMousepad, color);
 
 	ChromaAnimationAPI::SetEffectCustom1D((int)EChromaSDKDevice1DEnum::DE_ChromaLink, colorsChromaLink);
 	ChromaAnimationAPI::SetEffectCustom1D((int)EChromaSDKDevice1DEnum::DE_Headset, colorsHeadset);
@@ -139,6 +147,16 @@ bool InitModule ()
 	delete[] colorsKeypad;
 	delete[] colorsMouse;
 	delete[] colorsMousepad;
+
+	/*
+#if DEBUG_LOGGING
+	pluginLog << "Waiting 2 secs.... Chroma should be green!" << endl;
+	pluginLog.flush();
+	pluginLog.close();
+#endif
+
+	Sleep(2000); //Wait for ChromaSDK
+	*/
 
 #if DEBUG_LOGGING
 	pluginLog << "Plugin init complete" << endl;
