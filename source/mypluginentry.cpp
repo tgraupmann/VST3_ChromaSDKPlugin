@@ -2,6 +2,8 @@
 // Copyright(c) 2021 My Plug-in Company.
 //------------------------------------------------------------------------
 
+#define DEBUG_LOGGING false
+
 #include "mypluginprocessor.h"
 #include "myplugincontroller.h"
 #include "myplugincids.h"
@@ -9,6 +11,11 @@
 
 #include "public.sdk/source/main/pluginfactory.h"
 #include "Razer\ChromaAnimationAPI.h"
+
+#if DEBUG_LOGGING
+#include <iostream>
+#include <fstream>
+#endif
 
 #include <tchar.h>
 
@@ -40,9 +47,18 @@ const int GetColorArraySize2D(EChromaSDKDevice2DEnum device)
 // called after library was loaded
 bool InitModule ()
 {
+#if DEBUG_LOGGING
+	ofstream pluginLog;
+	pluginLog.open("C:\\Temp\\vst3_chromaplugin.txt");
+#endif
+
 	if (ChromaAnimationAPI::InitAPI() != 0)
 	{
-		fprintf(stderr, "Failed to load the Chroma library!\r\n");
+#if DEBUG_LOGGING
+		pluginLog << "Failed to load the Chroma library!" << endl;
+		pluginLog.flush();
+		pluginLog.close();
+#endif
 		return false;
 	}
 
@@ -51,7 +67,7 @@ bool InitModule ()
 	_tcscpy_s(appInfo.Title, 256, _T("Razer VST3 Chroma SDK Plugin"));
 	_tcscpy_s(appInfo.Description, 1024, _T("A sample application using Razer Chroma SDK"));
 	_tcscpy_s(appInfo.Author.Name, 256, _T("Razer"));
-	_tcscpy_s(appInfo.Author.Contact, 256, _T("https://developer.razer.com/chroma"));
+	_tcscpy_s(appInfo.Author.Contact, 256, _T("https://github.com/tgraupmann/VST3_ChromaSDKPlugin"));
 
 	//appInfo.SupportedDevice = 
 	//    0x01 | // Keyboards
@@ -67,9 +83,18 @@ bool InitModule ()
 	RZRESULT result = ChromaAnimationAPI::InitSDK(&appInfo);
 	if (result != RZRESULT_SUCCESS)
 	{
-		fprintf(stderr, "Failed to initialize Chroma!\r\n");
+#if DEBUG_LOGGING
+		pluginLog << "Failed to initialize Chroma!" << endl;
+		pluginLog.flush();
+		pluginLog.close();
+#endif
 		return false;
 	}
+
+#if DEBUG_LOGGING
+	pluginLog << "Chroma Initialized!" << endl;
+	pluginLog.flush();
+#endif
 
 	Sleep(100); //Wait for ChromaSDK
 
@@ -112,6 +137,12 @@ bool InitModule ()
 	delete[] colorsKeypad;
 	delete[] colorsMouse;
 	delete[] colorsMousepad;
+
+#if DEBUG_LOGGING
+	pluginLog << "Plugin init complete" << endl;
+	pluginLog.flush();
+	pluginLog.close();
+#endif
 
 	return true;
 }

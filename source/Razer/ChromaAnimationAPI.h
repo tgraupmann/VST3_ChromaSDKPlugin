@@ -3,9 +3,9 @@
 #include "ChromaSDKPluginTypes.h"
 
 # ifdef _WIN64
-#define CHROMA_EDITOR_DLL	_T("CChromaEditorLibrary64.dll")
+#define CHROMA_EDITOR_DLL	_T("C:\\Program Files\\Common Files\\VST3\\CChromaEditorLibrary64.dll")
 #else
-#define CHROMA_EDITOR_DLL	_T("CChromaEditorLibrary.dll")
+#define CHROMA_EDITOR_DLL	_T("C:\\Program Files\\Common Files\\VST3\\CChromaEditorLibrary.dll")
 #endif
 
 /* Setup log mechanism */
