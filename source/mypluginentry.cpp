@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------
-// Copyright(c) 2021 My Plug-in Company.
+// Copyright(c) 2021 Razer Inc..
 //------------------------------------------------------------------------
 
 #define DEBUG_LOGGING false
@@ -163,7 +163,7 @@ bool DeinitModule ()
 }
 
 using namespace Steinberg::Vst;
-using namespace MyCompanyName;
+using namespace RazerInc;
 
 //------------------------------------------------------------------------
 //  VST Plug-in Entry
@@ -172,9 +172,9 @@ using namespace MyCompanyName;
 // GetPluginFactory function!
 //------------------------------------------------------------------------
 
-BEGIN_FACTORY_DEF ("My Plug-in Company", 
-			       "https://www.mycompanyname.com", 
-			       "mailto:info@mycompanyname.com")
+BEGIN_FACTORY_DEF ("Razer Inc.", 
+			       "https://www.RazerInc.com", 
+			       "mailto:info@RazerInc.com")
 
 	//---First Plug-in included in this factory-------
 	// its kVstAudioEffectClass component

@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------
-// Copyright(c) 2021 My Plug-in Company.
+// Copyright(c) 2021 Razer Inc..
 //------------------------------------------------------------------------
 
 #include "myplugincontroller.h"
@@ -8,7 +8,7 @@
 
 using namespace Steinberg;
 
-namespace MyCompanyName {
+namespace RazerInc {
 
 //------------------------------------------------------------------------
 // VST3_ChromaSDKPluginController Implementation
@@ -103,4 +103,4 @@ tresult PLUGIN_API VST3_ChromaSDKPluginController::getParamValueByString (Vst::P
 }
 
 //------------------------------------------------------------------------
-} // namespace MyCompanyName
+} // namespace RazerInc

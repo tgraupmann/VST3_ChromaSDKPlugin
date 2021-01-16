@@ -1,12 +1,12 @@
 //------------------------------------------------------------------------
-// Copyright(c) 2021 My Plug-in Company.
+// Copyright(c) 2021 Razer Inc..
 //------------------------------------------------------------------------
 
 #pragma once
 
 #include "public.sdk/source/vst/vsteditcontroller.h"
 
-namespace MyCompanyName {
+namespace RazerInc {
 
 //------------------------------------------------------------------------
 //  VST3_ChromaSDKPluginController
@@ -54,4 +54,4 @@ protected:
 };
 
 //------------------------------------------------------------------------
-} // namespace MyCompanyName
+} // namespace RazerInc
